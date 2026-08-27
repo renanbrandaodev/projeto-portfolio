@@ -24,11 +24,23 @@
 
 }
 
+body.escuro {
+  --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333333;
+  --destaque: #0077ff;
+  --destaque-inverso: #66bbff;
+  --fundo-card: #444444;
+
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color 0.5s, color 0.5s;
+  transition-timing-function: ease;
 }
 
 header {
@@ -255,12 +267,14 @@ footer {
   color: var(--texto-inverso);
   text-align: center;
   padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.300);
 }
 
 footer a {
   color: var(--texto-inverso);
   text-decoration: none;
   font-weight: bold;
+  
 }
 
 footer a:hover {
