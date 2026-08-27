@@ -101,15 +101,16 @@ main {
 }
 
 #ficha p {
-  text-indent: 40px;
+  text-indent: 10px;
   text-align: justify;
+  
 }
 
 .social {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
+  font-size: 1.5em;
   gap: 1em;
   margin-top: 15px;
 }
@@ -267,6 +268,22 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
+
+    main {
+      grid-template-columns: auto 300px 1fr auto;
+    }
+
+    #ficha {
+      grid-column: 2 / 3;
+      height: fit-content;
+      position: sticky;
+      top: 65px;px
+
+    }
+
+    #detalhes {
+      grid-column: 3 / 4;
+    }
 
     #skill-container {
       grid-template-columns: 1fr 1fr;
